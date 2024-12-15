@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <title>Learning JS</title>
+  </head>
+  
+  <body>
+    <main class="flex-column">
+      <div class="flex-row">
+	<div style="align-items: center;" class="window flex-row">
+	  <p>
+	    Welcome to my AoC 2024!<br>
+	    Have a nice stay :3<br><br>
+	    To get started: select the day,<br>
+	    insert your input and press Play!
+	  </p>
+	</div>
+	
+	<div class="window flex-row">
+	  <textarea id="consoleInput"
+		    rows="8"
+		    cols="40"
+		    spellcheck="false"
+		    placeholder="Input here..."></textarea>
+	  
+	  <div style="margin-left: 0;" class="flex-column">
+	    <form id="myForm">
+	      <input id="numberDisplay"
+		     type="text"
+		     size="5"
+		     value="1"
+		     maxlength="2">
+	    </form>
+
+	    <button style="margin: 0 0 20px 0;"
+		    type="button"
+		    onclick="exec()">Play</button>
+	    
+	    <div style="margin-left: 0;" class="flex-row">
+	      <button type="button"
+		      onclick="previous()">&#11207;</button>
+	      
+	      <button type="button"
+		      onclick="next()">&#11208;</button>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <div class="window">
+	<div id="consoleOutput"></div>
+      </div>
+    </main>
+    
+    <div style="align-items: center;" class="corner window flex-row">
+      <p>Do it for <u><b><i>him</i></b></u> &lt3</p>
+      <div class="mask">
+	<a href="https://github.com/Kel-05/" target="_blank">
+	  <img src="assets/corner-pfp.jpg" alt="The love of my life">
+	</a>
+      </div>
+    </div>
+  </body>
+</html>
